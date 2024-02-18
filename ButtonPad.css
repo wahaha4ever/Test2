@@ -1,0 +1,50 @@
+.dp {
+	background-repeat : no-repeat;
+	background-size: 100% 100%;
+    background-position: center;
+}
+.dpleft {
+	background-image: url("icon/left-arrow-svgrepo-com.svg");
+}
+.dpright {
+	background-image: url("icon/right-arrow-svgrepo-com.svg");
+}
+.dpup {
+	background-image: url("icon/up-arrow-svgrepo-com.svg");
+}
+.dpdown {
+	background-image: url("icon/down-arrow-svgrepo-com.svg");
+}
+
+.dpRleft {
+	background-image: url("icon/rotate-left.svg");
+    background-size : 80%;
+}
+.dpRright {
+	background-image: url("icon/rotate-right.svg");
+    background-size : 80%;
+}
+/* .dpX {
+	background-image: url("power-button.svg");
+}
+.dpY {
+	background-image: url("icon/rotate-left.svg");
+} */
+/*.dpa, .dpb, .dpx, .dpy {
+
+}*/
+
+.dpleftArea {
+    position:absolute;
+    bottom : 10px;
+    left : 10px;
+    /*background-color : green;*/
+    /*opacity : 0.3;*/
+}
+.dprightArea {
+    position:absolute;
+    bottom : 10px;
+    right : 10px;
+    /*background-color : green;*/
+    /*opacity : 0.3;*/
+}
