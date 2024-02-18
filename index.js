@@ -608,11 +608,18 @@
 
 	////window.addEventListener('resize', resizeCanvas, false);
 	//window.addEventListener('orientationchange', resizeCanvas, false);
-	screen.orientation.addEventListener('change', (event) => { 
-		console.log(event.target.type); 
-		resizeCanvas(); 
-		resizeNextCanvas();
-	}, false);
+	if ('orientation' in screen && 'onchange' in screen.orientation) {
+		screen.orientation.addEventListener('change', (event) => { 
+			console.log(event.target.type); 
+			resizeCanvas(); 
+			resizeNextCanvas();
+		}, false);
+	} else {
+		window.addEventListener('orientationchange', (event) => {
+			resizeCanvas(); 
+			resizeNextCanvas();
+		}, false);
+	}
 	resizeCanvas();
 	resizeNextCanvas();
 	
